@@ -127,3 +127,4 @@ void loop()
 
   delay(1000); // Delay 1 second
 }
+// althaf paper - digital sensor - time sync
