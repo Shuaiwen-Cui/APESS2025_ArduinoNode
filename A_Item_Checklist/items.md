@@ -2,15 +2,13 @@
 
 ### Main Control
 
-Arduino Uno R4 Wifi
+- [x] Arduino Uno R4 Wifi
+- [x] Sensor Shield
 
 ### Components
 
-Accelerometer MPU6050
-
-Real-time Clock DS1307
-
-SD Card Module
-
-Transceiver NRF24L01
-
+- [x] Accelerometer MPU6050
+- [x] SD Card Module
+- [x] Transceiver NRF24L01
+- [x] 6812 RGB LED
+- [x] Touch Sensor
