@@ -1,0 +1,345 @@
+# Copyright (c) 2025 - now Shuaiwen Cui
+# Built upon MkDocs & Material for MkDocs
+
+# Project information
+site_name: APESS2025_ArduinoNode
+site_url: https://localhost:8000/ # build and run on server, to visit it, type in the server's IP address and port number like this: xxx.xxx.xxx.xxx:8000
+site_author: Shuaiwen Cui
+site_description: >-
+  
+# Repository
+repo_name: Shuaiwen-Cui/APESS2025_ArduinoNode
+repo_url: https://github.com/Shuaiwen-Cui/APESS2025_ArduinoNode.git
+
+# Copyright
+copyright: Copyright &copy; 2025 ~ now 
+
+# Configuration
+theme:
+  name: material
+  language: en
+  logo: static/images/logo.png
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    # - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    # - navigation.expand # expand the side navigation bar by default
+    - navigation.footer
+    - navigation.indexes # documents can be directly attached to sections, which is particularly useful for providing overview pages
+    # - navigation.instant
+    - navigation.instant.prefetch # for large file
+    - navigation.instant.progress # loading progress bar
+    - navigation.path # breadcrumb path on top of page
+    # - navigation.prune # only build the visible part of the navigation tree
+    # - navigation.sections # navigation - top level will render as sections
+    - navigation.tabs
+    - navigation.tabs.sticky # tabs stick to the top of the page
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate # toc is merged into the left navigation bar
+  palette:
+    - media: "(prefers-color-scheme)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: static/images/logo.png
+  icon:
+    logo: logo
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    tag:
+      default-tag: fontawesome/solid/tag
+      hardware-tag: fontawesome/solid/microchip
+      software-tag: fontawesome/solid/laptop-code
+
+# Plugins
+plugins:
+  - tags
+  - blog
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags 
+  # - social
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  # - privacy
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+          # site_name: Infinity
+        - locale: zh
+          name: 简体中文
+          build: true
+          nav_translations: # note that all titles and subtitles in the navigation bar that need to be translated can be put here, but with no indentation
+            ABOUT: 关于
+            DATASHEET: 数据手册
+            HARDWARE: 硬件
+            MAIN CONTROLLER BOARD: 主控板
+            SHIELD: 扩展板
+            ACCELERATION: 加速度计
+            SDCARD: SD卡
+            RADIO-FREQUENCY: 射频
+            RGB-LED: RGB-LED
+            TOUCH-SENSOR: 触摸传感器
+            POWER: 电源供应
+            ENCLOSURE: 外壳
+            SOFTWARE: 软件
+            IDE: 集成开发环境
+            PROGRAMMING: 编程
+            FRAMEWORK: 框架
+            ARCHITECTURE: 架构
+            CONFIGURATION: 配置
+            STATEMACHINE: 状态机
+            COMMUNICATION: 通信
+            WIFI: WIFI
+            MQTT: MQTT协议
+            RADIOFREQUENCY: 射频通信
+            TIME-MANAGEMENT: 时间管理
+            TIME: 时间
+            TIMESYNC: 时间同步
+            COMMAND-FEEDBACK: 命令反馈
+            COMMAND: 命令
+            FEEDBACK: 反馈
+            SENSING-STORAGE: 传感与存储
+            SENSING: 传感
+            STORAGE: 存储
+            UPLOADING: 上传
+            # DEMO: 演示
+            # TIME SYNC TEST: 时间同步测试
+            # LAB TEST: 实验室测试
+            # FIELD TEST 1: 户外实验 1
+            # FIELD TEST 2: 户外实验 2
+            APESS2025HANDSON: APESS2025实践
+            OUTLINE: 大纲
+            ASSEMBLY: 组装
+            PROGRAMMING: 编程
+            DEPLOYMENT: 部署
+
+# # Hooks
+# hooks:
+#   - material/overrides/hooks/shortcodes.py
+#   - material/overrides/hooks/translations.py 
+
+# Additional configuration 
+extra:
+  generator: false
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+    # property: GOOGLE_ANALYTICS_KEY
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  # alternate:
+  #   - name: English
+  #     link: /en/ 
+  #     lang: en
+  #   - name: Chinese
+  #     link: /zh/
+  #     lang: zh
+  social:
+    - icon: fontawesome/solid/house
+      link: http://www.cuishuaiwen.com/
+    - icon: fontawesome/brands/github
+      link: https://github.com/Shuaiwen-Cui
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/shaun-shuaiwen-cui/
+    - icon: fontawesome/brands/researchgate
+      link: https://www.researchgate.net/profile/Shuaiwen-Cui
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0003-4447-6687
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ShuaiwenC
+  tags:
+    Default: default-tag
+    Hardware: hardware-tag
+    Software: software-tag
+  # consent:
+  #   title: Cookie consent
+  #   description: >- 
+  #     We use cookies to recognize your repeated visits and preferences, as well
+  #     as to measure the effectiveness of our documentation and whether users
+  #     find what they're searching for. With your consent, you're helping us to
+  #     make our documentation better.
+
+# Extra Configuration 
+extra_javascript:
+  # - https://giscus.app/client.js
+  # - javascripts/katex.js 
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  # - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  # - javascripts/embed-pdf.js
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page Navigation Tree
+nav:
+  - ABOUT: 
+      - "index.md"
+  - DATASHEET:
+      - "DATASHEET/datasheet.md"
+  - HARDWARE:
+      - "HARDWARE/hardware.md"
+      - MAIN CONTROLLER BOARD: "HARDWARE/MCU/mcu.md"
+      - SHIELD: "HARDWARE/SHIELD/shield.md"
+      - ACCELERATION: "HARDWARE/ACCELERATION/acceleration.md"
+      - SDCARD: "HARDWARE/SDCARD/sdcard.md"
+      - RADIO-FREQUENCY: "HARDWARE/RADIOFREQUENCY/radiofrequency.md"
+      - RGB-LED: "HARDWARE/RGB-LED/rgbled.md"
+      # - TOUCH-SENSOR: "HARDWARE/TOUCH-SENSOR/touchsensor.md"
+      - POWER: "HARDWARE/POWER/power.md"
+      - ENCLOSURE: "HARDWARE/ENCLOSURE/enclosure.md"
+  - SOFTWARE:
+      - "SOFTWARE/software.md"
+      - IDE: "SOFTWARE/IDE/ide.md"
+      - PROGRAMMING: "SOFTWARE/PROGRAMMING/programming.md"
+      - FRAMEWORK: "SOFTWARE/FRAMEWORK/framework.md"
+      - ARCHITECTURE: "SOFTWARE/ARCHITECTURE/architecture.md"
+      - CONFIGURATION: "SOFTWARE/CONFIGURATION/configuration.md"
+      - STATEMACHINE: "SOFTWARE/STATEMACHINE/statemachine.md"
+      - COMMUNICATION:
+          - WIFI: "SOFTWARE/COMMUNICATION/wifi.md"
+          - MQTT: "SOFTWARE/COMMUNICATION/mqtt.md"
+          - RADIOFREQUENCY: "SOFTWARE/COMMUNICATION/rf.md"
+      - TIME-MANAGEMENT:
+          - TIME: "SOFTWARE/TIME-MANAGEMENT/time.md"
+          - TIMESYNC: "SOFTWARE/TIME-MANAGEMENT/timesync.md"
+      - COMMAND-FEEDBACK:
+          - COMMAND: "SOFTWARE/COMMAND-FEEDBACK/command.md"
+          - FEEDBACK: "SOFTWARE/COMMAND-FEEDBACK/feedback.md"
+      - SENSING-STORAGE:
+          - SENSING: "SOFTWARE/SENSING-STORAGE/sensing.md"
+          - STORAGE: "SOFTWARE/SENSING-STORAGE/storage.md"
+          - UPLOADING: "SOFTWARE/SENSING-STORAGE/uploading.md"
+  # - DEMO: 
+  #     - "DEMO/demo.md"
+  #     - TIME SYNC TEST: "DEMO/timesynctest.md"
+  #     - LAB TEST: "DEMO/lab-test.md"
+  #     - FIELD TEST 1: "DEMO/field-test1.md"
+  #     - FIELD TEST 2: "DEMO/field-test2.md"
+  - APESS2025HANDSON:
+      - OUTLINE: "APESS2025HANDSON/apess2025.md"
+      - ASSEMBLY: "APESS2025HANDSON/ASSEMBLY/assembly.md"
+      - PROGRAMMING: "APESS2025HANDSON/PROGRAMMING/programming.md"
+      - DEPLOYMENT: "APESS2025HANDSON/DEPLOYMENT/deployment.md"
+    
+# if there are sub nodes under a node, then there should not be a link right after the node. All the stuff should be placed under the node.
+
+# example
+
+# [incorrect use]
+# - CLOUD: "./CLOUD/cloud.md"
+#     - CLOUD-TECH: "./CLOUD/CLOUD-TECH/cloud-tech.md"
+
+# [correct use]
+# - CLOUD: 
+#     - "./CLOUD/cloud.md"
+#     - CLOUD-TECH: "./CLOUD/CLOUD-TECH/cloud-tech.md"
