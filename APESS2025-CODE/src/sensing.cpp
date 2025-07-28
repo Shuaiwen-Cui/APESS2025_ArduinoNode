@@ -80,7 +80,7 @@ void sensing_sample_once()
         int16_t ax, ay, az;
 
         // Read acceleration data from the IMU, to be completed by students, refering to mpu6050.hpp and mpu6050.cpp
-        
+        imu_get_acceleration(ax, ay, az);
 
         // Calculate the elapsed time since the start of sensing
         uint32_t elapsed = now_ms - t_start_ms;
@@ -217,4 +217,40 @@ void sensing_retrieve_file()
 
     node_status.node_flags.data_retrieval_requested = false;
     node_status.node_flags.data_retrieval_sent = true;
+}
+
+
+
+
+void sensing_sample_once()
+{
+    // Check current time
+    uint32_t now_ms = Time.get_time();
+    // Check if we should sample
+    if (now_ms - last_sample_time >= (1000 / sensing_rate_hz))
+    {
+        // if yes, update the last sample time
+        last_sample_time += (1000 / sensing_rate_hz);
+        // Prepare the variables for reading IMU data
+        int16_t ax, ay, az;
+        // <Read acceleration data from the IMU, to be completed by students, refering to mpu6050.hpp and mpu6050.cpp>
+        
+        // Calculate the elapsed time since the start of sensing
+        uint32_t elapsed = now_ms - t_start_ms;
+
+        // Converting raw acceleration data to g's using the scaling factor and calibration factors
+        // float ax_g
+        // float ay_g
+        // float az_g
+
+        // print the data to the SD card file
+        char line[64];
+
+        // <construct the line with elapsed time and acceleration data>
+
+        data_file.println(line); // print to the SD card file
+
+        // Update the number of samples taken
+        sample_count++;
+    }
 }

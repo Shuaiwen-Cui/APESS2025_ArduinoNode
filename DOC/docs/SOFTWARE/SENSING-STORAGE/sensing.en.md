@@ -1,7 +1,7 @@
 # ACCELERATION SENSING
 
 Sampling can be said to be one of the most important functions of this project. It allows us to collect and store data from sensors for subsequent analysis and processing. Since Arduino performance is very limited, this project uses a method of sampling and storing at the same time to achieve data collection. Since there is no real-time operating system, the storage process will have a certain impact on sampling, so a high sampling frequency cannot be achieved, but due to the demonstration and teaching nature of this project, the sampling frequency does not need to be very high. After testing, a sampling frequency of 200Hz can be fully achieved, and since it is sampling and storing at the same time, the data limit is basically equivalent to the capacity of the SD card.
-
+<!-- 
 **sensing.hpp**
 
 ```cpp
@@ -240,7 +240,7 @@ void sensing_retrieve_file()
     node_status.node_flags.data_retrieval_sent = true;
 }
 
-```
+``` -->
 
 As shown in the code above, the sampling process is divided into several stages:
 
