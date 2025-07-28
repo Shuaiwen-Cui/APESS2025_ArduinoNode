@@ -18,6 +18,8 @@ Location: ZS1107
 - Wired sensors  
 - Cantilever beam structure
 
+![](node-all.jpg)
+
 ![](setup.png)
 
 ### Test Procedure
