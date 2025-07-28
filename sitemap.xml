@@ -113,13 +113,6 @@
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:8000/zh/HARDWARE/POWER/power/"/>
     </url>
     <url>
-        <loc>https://localhost:8000/HARDWARE/RADIO-FREQUENCY/rf/</loc>
-        <lastmod>2025-07-28</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://localhost:8000/HARDWARE/RADIO-FREQUENCY/rf/"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:8000/zh/HARDWARE/RADIO-FREQUENCY/rf/"/>
-    </url>
-    <url>
         <loc>https://localhost:8000/HARDWARE/RADIOFREQUENCY/radiofrequency/</loc>
         <lastmod>2025-07-28</lastmod>
         <changefreq>daily</changefreq>
@@ -391,13 +384,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:8000/zh/HARDWARE/POWER/power/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:8000/HARDWARE/POWER/power/"/>
-    </url>
-    <url>
-        <loc>https://localhost:8000/zh/HARDWARE/RADIO-FREQUENCY/rf/</loc>
-        <lastmod>2025-07-28</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:8000/zh/HARDWARE/RADIO-FREQUENCY/rf/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://localhost:8000/HARDWARE/RADIO-FREQUENCY/rf/"/>
     </url>
     <url>
         <loc>https://localhost:8000/zh/HARDWARE/RADIOFREQUENCY/radiofrequency/</loc>
