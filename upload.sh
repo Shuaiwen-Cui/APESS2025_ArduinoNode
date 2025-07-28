@@ -18,6 +18,6 @@ git push -f https://github.com/Shuaiwen-Cui/APESS2025_ArduinoNode.git main
 # git push -u origin main
 echo '--------push to GitHub successfully--------'
 
-# cd ./MCU_DOC/
-# mkdocs gh-deploy
+cd ./DOC/
+mkdocs gh-deploy
 # echo '--------deployed to Github Pages sucessfully--------'
