@@ -6,3 +6,13 @@ This project will show you how to build a simple IoT wireless sensor node/networ
     The code in this project is far from perfect. Its main focus is to demonstrate key concepts and implementations of IoT wireless sensor networks from a theoretical perspective. There may be some less elegant parts in the code, and suggestions for improvement are welcome.
 
 ![Cover](cover.png)
+
+![](arduinonode.jpg)
+
+![](teaching.jpg)
+
+![](deployment.jpg)
+
+![](apess2025.jpg)
+
+![](group.jpg)

@@ -6,3 +6,13 @@
     本项目代码还远称不上完美，其重点是从原理上展示一些IoT无线传感器网络的关键概念和实现方式。代码中可能存在一些不够优雅的地方，欢迎大家提出改进意见。
 
 ![封面](cover.png)
+
+![](arduinonode.jpg)
+
+![](teaching.jpg)
+
+![](deployment.jpg)
+
+![](apess2025.jpg)
+
+![](group.jpg)
