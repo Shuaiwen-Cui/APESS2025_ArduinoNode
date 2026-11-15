@@ -22,8 +22,8 @@ GATEWAY NODE EXAMPLE
 #define NUM_NODES 2 // Total number of nodes in the network
 
 /* WiFi Credentials */
-#define WIFI_SSID "Shaun's Iphone"
-#define WIFI_PASSWORD "cshw0918"
+#define WIFI_SSID "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
 
 /* MQTT Configurations */
 #define MQTT_CLIENT_ID      "GATEWAY"
@@ -76,8 +76,8 @@ LEAFNODE EXAMPLE
 #define NUM_NODES 2 // Total number of nodes in the network
 
 /* WiFi Credentials */
-#define WIFI_SSID "Shaun's Iphone"
-#define WIFI_PASSWORD "cshw0918"
+#define WIFI_SSID "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
 
 /* MQTT Configurations */
 // #define MQTT_CLIENT_ID      "GATEWAY"
