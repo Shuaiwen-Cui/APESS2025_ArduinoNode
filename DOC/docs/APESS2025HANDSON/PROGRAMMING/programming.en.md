@@ -108,8 +108,8 @@ Open the `src/config.h` file in the project directory. You will see a section li
 
 #define MQTT_BROKER_ADDRESS "8.222.194.160"
 #define MQTT_BROKER_PORT    1883
-#define MQTT_USERNAME       "ArduinoNode"
-#define MQTT_PASSWORD       "Arduino123"
+#define MQTT_USERNAME       "YOUR_MQTT_USERNAME"
+#define MQTT_PASSWORD       "YOUR_MQTT_PASSWORD"
 #define MQTT_TOPIC_PUB      "ArduinoNode/node"
 #define MQTT_TOPIC_SUB      "ArduinoNode/server"
 
